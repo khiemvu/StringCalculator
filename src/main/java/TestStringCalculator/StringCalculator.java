@@ -12,6 +12,10 @@ public class StringCalculator {
         if(numbers.isEmpty())
             return 0;
         else
-            return Integer.parseInt(numbers);
+            return convertToInt(numbers);
+    }
+    public int convertToInt(String number){
+        int num = Integer.parseInt(number);
+        return num;
     }
 }
