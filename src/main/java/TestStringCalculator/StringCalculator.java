@@ -13,7 +13,11 @@ public class StringCalculator {
             return 0;
         }else if(numbers.contains(",")){
             String [] number = numbers.split(",");
-            return convertToInt(number[0]) + convertToInt(number[1]);
+            int sum = 0;
+            for(String temp : number){
+                sum += convertToInt(temp);
+            }
+            return sum;
         }
         else
             return convertToInt(numbers);
