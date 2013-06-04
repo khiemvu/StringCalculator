@@ -21,7 +21,10 @@ public class TestStringCalculator {
     }
     @Test
     public void testWhenStringHaveOnlyNumber(){
-
         assertEquals(1, stringCal.sum("1"));
+    }
+    @Test
+    public void testWhenStringHaveTwoNumber(){
+        assertEquals(3, stringCal.sum("1,2"));
     }
 }
