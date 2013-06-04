@@ -52,4 +52,10 @@ public class TestStringCalculator {
         expectedException.expectMessage("negative not allowed -1");
         assertEquals(0, stringCal.sum("-1"));
     }
+
+    @Test
+    public void testWhenStringHaveMultipliNegative(){
+        expectedException.expectMessage("negative not allowed -1 -2");
+        assertEquals(7, stringCal.sum("-1,-2,3,4"));
+    }
 }
