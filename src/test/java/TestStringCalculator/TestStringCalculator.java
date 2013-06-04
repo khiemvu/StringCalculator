@@ -31,4 +31,8 @@ public class TestStringCalculator {
     public void testWhenStringHaveMultipliNumber(){
         assertEquals(6, stringCal.sum("1,2,3"));
     }
+    @Test
+    public void testWhenStringHaveNewLine(){
+        assertEquals(6, stringCal.sum("1\n2,3"));
+    }
 }
