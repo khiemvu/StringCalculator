@@ -8,7 +8,7 @@ package TestStringCalculator;
  * To change this template use File | Settings | File Templates.
  */
 public class StringCalculator {
-    private String DELIMITER = ",";
+    private String DELIMITER = ",|\n";
     public int sum(String numbers) {
         return calSum(allNumber(numbers));
     }
