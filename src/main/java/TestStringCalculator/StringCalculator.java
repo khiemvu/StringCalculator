@@ -1,5 +1,8 @@
 package TestStringCalculator;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Created with IntelliJ IDEA.
  * User: All_in_one
@@ -10,7 +13,13 @@ package TestStringCalculator;
 public class StringCalculator {
     private String DELIMITER = ",|\n";
     public int sum(String numbers) {
-        return calSum(allNumber(numbers));
+        Matcher matcher = Pattern.compile("^//(.)\n(.*)").matcher(numbers);
+        String temp = numbers;
+        if(matcher.find()){
+            DELIMITER = matcher.group(1);
+            temp = matcher.group(2);
+        }
+        return calSum(allNumber(temp));
     }
     public int convertToInt(String number){
         int num = Integer.parseInt(number);
