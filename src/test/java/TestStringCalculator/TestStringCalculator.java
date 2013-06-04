@@ -58,4 +58,8 @@ public class TestStringCalculator {
         expectedException.expectMessage("negative not allowed -1 -2");
         assertEquals(7, stringCal.sum("-1,-2,3,4"));
     }
+    @Test
+    public void testWhenStringHaveANumberLargeThan1000(){
+        assertEquals(7, stringCal.sum("1001,3,4"));
+    }
 }
