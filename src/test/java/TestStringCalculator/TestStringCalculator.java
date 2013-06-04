@@ -27,4 +27,8 @@ public class TestStringCalculator {
     public void testWhenStringHaveTwoNumber(){
         assertEquals(3, stringCal.sum("1,2"));
     }
+    @Test
+    public void testWhenStringHaveMultipliNumber(){
+        assertEquals(6, stringCal.sum("1,2,3"));
+    }
 }
