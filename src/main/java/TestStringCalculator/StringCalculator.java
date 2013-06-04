@@ -16,7 +16,7 @@ public class StringCalculator {
         Matcher matcher = Pattern.compile("^//(.)\n(.*)").matcher(numbers);
         String temp = numbers;
         if(matcher.find()){
-            DELIMITER = matcher.group(1);
+            DELIMITER = Pattern.quote(matcher.group(1));
             temp = matcher.group(2);
         }
         return calSum(allNumber(temp));
