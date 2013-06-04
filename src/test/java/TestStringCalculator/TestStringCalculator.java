@@ -35,4 +35,8 @@ public class TestStringCalculator {
     public void testWhenStringHaveNewLine(){
         assertEquals(6, stringCal.sum("1\n2,3"));
     }
+    @Test
+    public void testDelimiterUserDefine(){
+        assertEquals(6, stringCal.sum("//;\n1;2;3"));
+    }
 }
