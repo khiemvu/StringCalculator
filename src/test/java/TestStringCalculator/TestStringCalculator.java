@@ -39,4 +39,8 @@ public class TestStringCalculator {
     public void testDelimiterUserDefine(){
         assertEquals(6, stringCal.sum("//;\n1;2;3"));
     }
+    @Test
+    public void testDelimiterUserDefineHaveKeyword(){
+        assertEquals(6, stringCal.sum("//?\n1?2?3"));
+    }
 }
