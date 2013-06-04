@@ -7,7 +7,7 @@
     <file path="F:/Qsoft/Training/Qsoft.com/TDD/StringCalculator/src/test/java/CalString/TestCalculatorString.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370240509937" ignored="false" />
     <file path="/TestCalculatorString.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370240495255" ignored="false" />
     <file path="F:/Qsoft/Training/Qsoft.com/TDD/StringCalculator/src/main/java/CalString/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370240584602" ignored="false" />
-    <file path="/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370329791123" ignored="false" />
+    <file path="/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370330111070" ignored="false" />
     <file path="/TestStringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370330010969" ignored="false" />
     <file path="/fragment.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370328503766" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/java/TestStringCalculator/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370242265804" ignored="false" />
@@ -84,7 +84,7 @@
       <file leaf-file-name="TestStringCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestStringCalculator/TestStringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="16" selection-start="1317" selection-end="1344" vertical-scroll-proportion="0.788162">
+            <state line="51" column="64" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.8411215">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +95,7 @@
       <file leaf-file-name="StringCalculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="43" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
+            <state line="25" column="75" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -608,15 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="43" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/org/junit/runners/model/RunnerBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.72791517">
@@ -624,9 +615,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="75" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestStringCalculator/TestStringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="16" selection-start="1317" selection-end="1344" vertical-scroll-proportion="0.788162">
+        <state line="51" column="64" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.8411215">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

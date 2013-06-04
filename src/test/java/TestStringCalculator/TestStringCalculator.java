@@ -49,7 +49,7 @@ public class TestStringCalculator {
     public ExpectedException expectedException = ExpectedException.none();
     @Test
     public void testWhenStringHaveANegative(){
-        expectedException.expectMessage("negative not allowed ");
+        expectedException.expectMessage("negative not allowed -1");
         assertEquals(0, stringCal.sum("-1"));
     }
 }
