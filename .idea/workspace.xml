@@ -7,7 +7,7 @@
     <file path="F:/Qsoft/Training/Qsoft.com/TDD/StringCalculator/src/test/java/CalString/TestCalculatorString.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370240509937" ignored="false" />
     <file path="/TestCalculatorString.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370240495255" ignored="false" />
     <file path="F:/Qsoft/Training/Qsoft.com/TDD/StringCalculator/src/main/java/CalString/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370240584602" ignored="false" />
-    <file path="/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370329107128" ignored="false" />
+    <file path="/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370329319702" ignored="false" />
     <file path="/TestStringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370329033148" ignored="false" />
     <file path="/fragment.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370328503766" ignored="false" />
     <file path="$PROJECT_DIR$/src/test/java/TestStringCalculator/StringCalculator.java" changelist="6ee65f41-fac0-45f6-9ebb-c935fb775d31" time="1370242265804" ignored="false" />
@@ -95,7 +95,7 @@
       <file leaf-file-name="StringCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="56" selection-start="706" selection-end="706" vertical-scroll-proportion="0.894081">
+            <state line="12" column="42" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0529595">
               <folding />
             </state>
           </provider>
@@ -617,7 +617,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="56" selection-start="706" selection-end="706" vertical-scroll-proportion="0.894081">
+        <state line="12" column="42" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0529595">
           <folding />
         </state>
       </provider>

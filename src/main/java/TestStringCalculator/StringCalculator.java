@@ -8,22 +8,25 @@ package TestStringCalculator;
  * To change this template use File | Settings | File Templates.
  */
 public class StringCalculator {
+    private String DELIMITER = ",";
     public int sum(String numbers) {
-        if(numbers.isEmpty()) {
-            return 0;
-        }else if(numbers.contains(",")){
-            String [] number = numbers.split(",");
-            int sum = 0;
-            for(String temp : number){
-                sum += convertToInt(temp);
-            }
-            return sum;
-        }
-        else
-            return convertToInt(numbers);
+        return calSum(allNumber(numbers));
     }
     public int convertToInt(String number){
         int num = Integer.parseInt(number);
         return num;
+    }
+    public String[] allNumber(String numbers){
+        if(numbers.isEmpty())
+            return new String[0];
+        else
+            return numbers.split(DELIMITER);
+    }
+    public int calSum(String[] number){
+        int sum = 0;
+        for (String num : number){
+            sum += convertToInt(num);
+        }
+        return sum;
     }
 }
