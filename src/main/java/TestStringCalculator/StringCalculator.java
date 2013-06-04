@@ -9,8 +9,12 @@ package TestStringCalculator;
  */
 public class StringCalculator {
     public int sum(String numbers) {
-        if(numbers.isEmpty())
+        if(numbers.isEmpty()) {
             return 0;
+        }else if(numbers.contains(",")){
+            String [] number = numbers.split(",");
+            return convertToInt(number[0]) + convertToInt(number[1]);
+        }
         else
             return convertToInt(numbers);
     }
