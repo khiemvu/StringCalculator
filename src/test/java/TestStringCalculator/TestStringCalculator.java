@@ -6,60 +6,72 @@ import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.assertEquals;
 
+
 /**
  * Created with IntelliJ IDEA.
  * User: All_in_one
- * Date: 6/4/13
- * Time: 1:46 PM
+ * Date: 6/6/13
+ * Time: 1:47 PM
  * To change this template use File | Settings | File Templates.
  */
 public class TestStringCalculator {
-
-    private StringCalculator stringCal = new StringCalculator();
+    private  StringCalculator stringCalculator = new StringCalculator();
     @Test
     public void testStringEmpty(){
-
-        assertEquals(0, stringCal.sum(""));
+        assertEquals(0, stringCalculator.sum(""));
     }
     @Test
-    public void testWhenStringHaveOnlyNumber(){
-        assertEquals(1, stringCal.sum("1"));
+     public void testStringHaveANumber(){
+        assertEquals(1, stringCalculator.sum("1"));
     }
     @Test
-    public void testWhenStringHaveTwoNumber(){
-        assertEquals(3, stringCal.sum("1,2"));
+    public void testStringHaveTwoNumber(){
+        assertEquals(3, stringCalculator.sum("1,2"));
     }
     @Test
-    public void testWhenStringHaveMultipliNumber(){
-        assertEquals(6, stringCal.sum("1,2,3"));
+    public void testStringHaveMultipliNumber(){
+        assertEquals(6, stringCalculator.sum("1,2,3"));
     }
     @Test
-    public void testWhenStringHaveNewLine(){
-        assertEquals(6, stringCal.sum("1\n2,3"));
+    public void testStringHaveNewLine(){
+        assertEquals(6, stringCalculator.sum("1\n2,3"));
     }
     @Test
-    public void testDelimiterUserDefine(){
-        assertEquals(6, stringCal.sum("//;\n1;2;3"));
+    public void testUserDefineDelimiter(){
+        assertEquals(6, stringCalculator.sum("//;\n1;2;3"));
+        assertEquals(6, stringCalculator.sum("//;\n1,2;3"));
     }
     @Test
-     public void testDelimiterUserDefineHaveKeyword(){
-        assertEquals(6, stringCal.sum("//a\n1a2a3"));
+    public void testUserDefineDelimiterHaveKeyword(){
+        assertEquals(6, stringCalculator.sum("//#\n1#2#3"));
+        assertEquals(6, stringCalculator.sum("//#\n1#2,3"));
     }
     @Rule
-    public ExpectedException expectedException = ExpectedException.none();
+    public ExpectedException ex = ExpectedException.none();
     @Test
-    public void testWhenStringHaveANegative(){
-        expectedException.expectMessage("negative not allowed -1");
-        assertEquals(0, stringCal.sum("-1"));
-    }
-
-    @Test
-    public void testWhenStringHaveMultipliNegative(){
-        expectedException.expectMessage("negative not allowed -1 -2");
-        assertEquals(7, stringCal.sum("-1,-2,3,4"));
+    public void testWhenStringHaveANegativeNumber(){
+        ex.expectMessage("negative not allowed -1");
+        assertEquals(0, stringCalculator.sum("-1"));
     }
     @Test
-    public void testWhenStringHaveANumberLargeThan1000(){
-        assertEquals(7, stringCal.sum("1001,3,4"));
+    public void testWhenStringHaveMultipliNegativeNumber(){
+        ex.expectMessage("negative not allowed -1 -2");
+        assertEquals(3, stringCalculator.sum("-1,-2,3"));
+    }
+    @Test
+     public void testWhenStringHaveANumberLargeThan1000(){
+        assertEquals(3, stringCalculator.sum("3,1001"));
+    }
+    @Test
+     public void testUserDefineMultipleSingleDelimiter(){
+        assertEquals(5, stringCalculator.sum("//[***]\n3***2"));
+    }
+    @Test
+    public void testUserDefineMultipleDelimiter(){
+        assertEquals(6, stringCalculator.sum("//[*][%]\n1*2%3"));
+    }
+    @Test
+    public void testUserDefineMultipleDelimiterWithLengthLargeThanOne(){
+        assertEquals(6, stringCalculator.sum("//[***][%%%]\n1***2%%%3"));
     }
 }
