@@ -23,6 +23,7 @@ public class StringCalculator {
     }
     public int convertInt(String num){
         int number = Integer.parseInt(num);
+        if(number < 0) throw new RuntimeException("negative not allowed "+number);
         return number;
     }
     public String[] getNumber(String number){
