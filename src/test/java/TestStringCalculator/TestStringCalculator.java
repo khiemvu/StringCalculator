@@ -74,4 +74,8 @@ public class TestStringCalculator {
     public void userDifineMultipliDelimiter(){
         assertEquals(6, stringCalculator.calSum("//[;][%]\n1;2%3"));
     }
+    @Test
+    public void userDifineMultipliDelimiterWithLegthLagerThan1(){
+        assertEquals(6, stringCalculator.calSum("//[;;;][%%]\n1;;;2%%3"));
+    }
 }
