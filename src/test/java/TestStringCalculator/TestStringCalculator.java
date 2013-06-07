@@ -62,4 +62,9 @@ public class TestStringCalculator {
         assertEquals(2, stringCalculator.calSum("-1,2,-3"));
 
     }
+    @Test
+    public void testWhenStringHaveNumberLagerThan1000(){
+        assertEquals(2, stringCalculator.calSum("10001,2,1000"));
+
+    }
 }
