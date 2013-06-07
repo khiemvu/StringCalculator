@@ -17,7 +17,7 @@ public class StringCalculator {
         String number = numbers;
         if(matcher.find()){
             if(matcher.group(2)!= null){
-                REGEX = Pattern.quote(matcher.group(2));
+                REGEX = Pattern.quote(matcher.group(2))+"|,";
             }
             else{
                 String delimiter = matcher.group(1);
@@ -31,7 +31,7 @@ public class StringCalculator {
                         allDelimiter.append("|" + Pattern.quote(delimiterMatcher.group(1)));
                     }
                 }
-                REGEX = allDelimiter.toString();
+                REGEX = allDelimiter.toString()+"|,";
             }
             number = matcher.group(5);
         }

@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestStringCalculator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestStringCalculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestStringCalculator/TestStringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="16" selection-start="2469" selection-end="2515" vertical-scroll-proportion="0.7875">
+            <state line="50" column="57" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringCalculator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StringCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="47" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
+            <state line="19" column="60" selection-start="615" selection-end="615" vertical-scroll-proportion="0.15">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,8 +110,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestStringCalculator/TestStringCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java" />
       </list>
     </option>
   </component>
@@ -579,18 +579,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestStringCalculator/TestStringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="47" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0">
+        <state line="50" column="57" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestStringCalculator/TestStringCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestStringCalculator/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="16" selection-start="2469" selection-end="2515" vertical-scroll-proportion="0.7875">
+        <state line="19" column="60" selection-start="615" selection-end="615" vertical-scroll-proportion="0.15">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
