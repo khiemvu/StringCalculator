@@ -8,7 +8,7 @@ package TestStringCalculator;
  * To change this template use File | Settings | File Templates.
  */
 public class StringCalculator {
-    private String REGEX = ",";
+    private String REGEX = ",|\n";
     public int calSum(String numbers) {
         return Sum(getNumber(numbers));
     }
