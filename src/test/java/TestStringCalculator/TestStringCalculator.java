@@ -23,5 +23,10 @@ public class TestStringCalculator {
     public void testWhenStringHaveANumber(){
         assertEquals(1, stringCalculator.calSum("1"));
     }
+    @Test
+    public void testWhenStringHaveTwoNumber(){
+        assertEquals(3, stringCalculator.calSum("1,2"));
+        assertEquals(6, stringCalculator.calSum("1,5"));
+    }
 
 }
