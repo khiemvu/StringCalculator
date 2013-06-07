@@ -1,6 +1,8 @@
 package TestStringCalculator;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.assertEquals;
 
@@ -47,5 +49,12 @@ public class TestStringCalculator {
     public void testUserDefineDelimiterHaveKeyword(){
         assertEquals(3, stringCalculator.calSum("//#\n1#2"));
         assertEquals(10, stringCalculator.calSum("//?\n1?5?4"));
+    }
+    @Rule
+    public ExpectedException expectedEx = ExpectedException.none();
+    @Test public void testNegativeNumber(){
+        expectedEx.expectMessage("negative not allowed -1");
+        assertEquals(2, stringCalculator.calSum("-1,2"));
+
     }
 }
