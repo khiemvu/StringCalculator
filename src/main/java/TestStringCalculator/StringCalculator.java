@@ -11,6 +11,9 @@ public class StringCalculator {
     public int calSum(String numbers) {
         if(numbers.isEmpty()){
             return 0;
+        }else if(numbers.contains(",")){
+            String []allNum = numbers.split(",");
+            return Integer.parseInt(allNum[0]) + Integer.parseInt(allNum[1]);
         }else
             return Integer.parseInt(numbers);
     }
