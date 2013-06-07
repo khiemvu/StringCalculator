@@ -33,5 +33,9 @@ public class TestStringCalculator {
         assertEquals(6, stringCalculator.calSum("1,2,3"));
         assertEquals(10, stringCalculator.calSum("1,5,4"));
     }
-
+    @Test
+    public void testWhenStringHaveNewLine(){
+        assertEquals(3, stringCalculator.calSum("1\n2"));
+        assertEquals(10, stringCalculator.calSum("1\n5,4"));
+    }
 }
