@@ -12,14 +12,15 @@ import static org.junit.Assert.assertEquals;
  * To change this template use File | Settings | File Templates.
  */
 public class TestStringCalculator {
+
+    private StringCalculator stringCalculator = new StringCalculator();
+
     @Test
     public void testWhenStringIsEmpty(){
-        StringCalculator stringCalculator = new StringCalculator();
         assertEquals(0, stringCalculator.calSum(""));
     }
     @Test
     public void testWhenStringHaveANumber(){
-        StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.calSum("1"));
     }
 
