@@ -8,7 +8,7 @@ package TestStringCalculator;
  * To change this template use File | Settings | File Templates.
  */
 public class StringCalculator {
-    public int calSum(String s) {
-        return 1;
+    public int calSum(String numbers) {
+        return 0;
     }
 }
