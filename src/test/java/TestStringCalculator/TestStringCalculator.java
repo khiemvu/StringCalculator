@@ -57,4 +57,9 @@ public class TestStringCalculator {
         assertEquals(2, stringCalculator.calSum("-1,2"));
 
     }
+    @Test public void testWhenStringHaveMultipliNegativeNumber(){
+        expectedEx.expectMessage("negative not allowed -1 -3");
+        assertEquals(2, stringCalculator.calSum("-1,2,-3"));
+
+    }
 }
