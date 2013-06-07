@@ -28,5 +28,10 @@ public class TestStringCalculator {
         assertEquals(3, stringCalculator.calSum("1,2"));
         assertEquals(6, stringCalculator.calSum("1,5"));
     }
+    @Test
+    public void testWhenStringHaveMultipliNumber(){
+        assertEquals(6, stringCalculator.calSum("1,2,3"));
+        assertEquals(10, stringCalculator.calSum("1,5,4"));
+    }
 
 }
