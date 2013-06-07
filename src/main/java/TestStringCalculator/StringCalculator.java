@@ -24,6 +24,7 @@ public class StringCalculator {
     public int convertInt(String num, StringBuffer negative){
         int number = Integer.parseInt(num);
         if(number < 0) negative.append(" "+number);
+        if(number >= 1000) number = 0;
         return number;
     }
     public String[] getNumber(String number){
