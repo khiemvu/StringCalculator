@@ -13,11 +13,16 @@ import java.util.regex.Pattern;
 public class StringCalculator {
     private String REGEX = ",|\n";
     public int calSum(String numbers) {
-        Matcher matcher = Pattern.compile("^//(.)\n(.*)").matcher(numbers);
+        Matcher matcher = Pattern.compile("^//((.)|(\\[(.+)\\]))\n(.*)").matcher(numbers);
         String number = numbers;
         if(matcher.find()){
-            REGEX = Pattern.quote(matcher.group(1));
-            number = matcher.group(2);
+            if(matcher.group(2)!= null){
+                REGEX = Pattern.quote(matcher.group(2));
+            }
+            else{
+                REGEX = Pattern.quote(matcher.group(4));
+            }
+            number = matcher.group(5);
         }
         return Sum(getNumber(number));
     }
