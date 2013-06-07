@@ -70,4 +70,8 @@ public class TestStringCalculator {
     public void userDifineMultipliSameDelimiter(){
         assertEquals(6, stringCalculator.calSum("//[;;;]\n1;;;2;;;3"));
     }
+    @Test
+    public void userDifineMultipliDelimiter(){
+        assertEquals(6, stringCalculator.calSum("//[;][%]\n1;2%3"));
+    }
 }
