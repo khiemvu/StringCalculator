@@ -8,13 +8,18 @@ package TestStringCalculator;
  * To change this template use File | Settings | File Templates.
  */
 public class StringCalculator {
+    private String REGEX = ",";
     public int calSum(String numbers) {
         if(numbers.isEmpty()){
             return 0;
-        }else if(numbers.contains(",")){
-            String []allNum = numbers.split(",");
-            return Integer.parseInt(allNum[0]) + Integer.parseInt(allNum[1]);
+        }else if(numbers.contains(REGEX)){
+            String []allNum = numbers.split(REGEX);
+            return convertInt(allNum[0]) + convertInt(allNum[1]);
         }else
-            return Integer.parseInt(numbers);
+            return convertInt(numbers);
+    }
+    public int convertInt(String num){
+        int number = Integer.parseInt(num);
+        return number;
     }
 }
