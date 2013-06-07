@@ -17,5 +17,10 @@ public class TestStringCalculator {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(0, stringCalculator.calSum(""));
     }
+    @Test
+    public void testWhenStringHaveANumber(){
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(1, stringCalculator.calSum("1"));
+    }
 
 }
