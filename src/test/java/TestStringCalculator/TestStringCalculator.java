@@ -65,6 +65,9 @@ public class TestStringCalculator {
     @Test
     public void testWhenStringHaveNumberLagerThan1000(){
         assertEquals(2, stringCalculator.calSum("10001,2,1000"));
-
+    }
+    @Test
+    public void userDifineMultipliSameDelimiter(){
+        assertEquals(6, stringCalculator.calSum("//[;;;]\n1;;;2;;;3"));
     }
 }
