@@ -10,19 +10,25 @@ package TestStringCalculator;
 public class StringCalculator {
     private String REGEX = ",";
     public int calSum(String numbers) {
-        if(numbers.isEmpty()){
-            return 0;
-        }else if(numbers.contains(REGEX)){
-            String []allNum = numbers.split(REGEX);
-            int sum = 0;
-            for(String num : allNum)
-                sum += convertInt(num);
-            return sum;
-        }else
-            return convertInt(numbers);
+        return Sum(getNumber(numbers));
     }
     public int convertInt(String num){
         int number = Integer.parseInt(num);
         return number;
+    }
+    public String[] getNumber(String number){
+        if(number.isEmpty()){
+            return new String[0];
+        }
+        else{
+            return number.split(REGEX);
+        }
+    }
+    public int Sum(String[] numbers){
+        int sum = 0;
+        for(String temp : numbers){
+            sum += convertInt(temp);
+        }
+        return sum;
     }
 }
