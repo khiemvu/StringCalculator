@@ -14,7 +14,10 @@ public class StringCalculator {
             return 0;
         }else if(numbers.contains(REGEX)){
             String []allNum = numbers.split(REGEX);
-            return convertInt(allNum[0]) + convertInt(allNum[1]);
+            int sum = 0;
+            for(String num : allNum)
+                sum += convertInt(num);
+            return sum;
         }else
             return convertInt(numbers);
     }
