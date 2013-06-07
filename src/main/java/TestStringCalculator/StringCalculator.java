@@ -21,9 +21,9 @@ public class StringCalculator {
         }
         return Sum(getNumber(number));
     }
-    public int convertInt(String num){
+    public int convertInt(String num, StringBuffer negative){
         int number = Integer.parseInt(num);
-        if(number < 0) throw new RuntimeException("negative not allowed "+number);
+        if(number < 0) negative.append(" "+number);
         return number;
     }
     public String[] getNumber(String number){
@@ -36,9 +36,11 @@ public class StringCalculator {
     }
     public int Sum(String[] numbers){
         int sum = 0;
+        StringBuffer negative = new StringBuffer();
         for(String temp : numbers){
-            sum += convertInt(temp);
+            sum += convertInt(temp,negative);
         }
+        if (negative.length()>0) throw new RuntimeException("negative not allowed" + negative);
         return sum;
     }
 }
