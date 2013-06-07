@@ -16,7 +16,7 @@ public class StringCalculator {
         Matcher matcher = Pattern.compile("^//(.)\n(.*)").matcher(numbers);
         String number = numbers;
         if(matcher.find()){
-            REGEX = matcher.group(1);
+            REGEX = Pattern.quote(matcher.group(1));
             number = matcher.group(2);
         }
         return Sum(getNumber(number));
