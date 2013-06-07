@@ -13,14 +13,25 @@ import java.util.regex.Pattern;
 public class StringCalculator {
     private String REGEX = ",|\n";
     public int calSum(String numbers) {
-        Matcher matcher = Pattern.compile("^//((.)|(\\[(.+)\\]))\n(.*)").matcher(numbers);
+        Matcher matcher = Pattern.compile("^//((.)|(\\[(.+?)\\])+)\n(.*)").matcher(numbers);
         String number = numbers;
         if(matcher.find()){
             if(matcher.group(2)!= null){
                 REGEX = Pattern.quote(matcher.group(2));
             }
             else{
-                REGEX = Pattern.quote(matcher.group(4));
+                String delimiter = matcher.group(1);
+                Matcher delimiterMatcher = Pattern.compile("\\[(.+?)\\]").matcher(delimiter);
+                StringBuffer allDelimiter = new StringBuffer();
+                while (delimiterMatcher.find()){
+                    if(allDelimiter.length() == 0){
+                        allDelimiter.append(Pattern.quote(delimiterMatcher.group(1)));
+                    }
+                    else{
+                        allDelimiter.append("|" + Pattern.quote(delimiterMatcher.group(1)));
+                    }
+                }
+                REGEX = allDelimiter.toString();
             }
             number = matcher.group(5);
         }
